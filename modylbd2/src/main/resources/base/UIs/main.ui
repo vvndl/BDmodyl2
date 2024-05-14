@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OLDI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../icons/base/Library.png</normaloff>../../../icons/base/Library.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="layout">
+    <item>
+     <layout class="QHBoxLayout" name="button_layout">
+      <item>
+       <widget class="QPushButton" name="books_btn">
+        <property name="text">
+         <string>Carti</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="students_btn">
+        <property name="text">
+         <string>Elevi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="borrows_btn">
+        <property name="text">
+         <string>Inchirieri</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>795</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuImport">
+    <property name="title">
+     <string>Import</string>
+    </property>
+    <addaction name="action_import_books"/>
+    <addaction name="action_import_students"/>
+   </widget>
+   <widget class="QMenu" name="menuSelect">
+    <property name="title">
+     <string>Select</string>
+    </property>
+    <addaction name="action_select_database"/>
+   </widget>
+   <addaction name="menuImport"/>
+   <addaction name="menuSelect"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionImport_Excel">
+   <property name="text">
+    <string>Import Excel</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>Connect...</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+  </action>
+  <action name="add_student">
+   <property name="text">
+    <string>Adauga elev...</string>
+   </property>
+  </action>
+  <action name="add_borrow">
+   <property name="text">
+    <string>Adauga inchiriere...</string>
+   </property>
+  </action>
+  <action name="action_import_books">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../Downloads/Book.png</normaloff>../../../../../../../../Downloads/Book.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import carti...</string>
+   </property>
+   <property name="toolTip">
+    <string>Import carti</string>
+   </property>
+   <property name="statusTip">
+    <string>De aici poti importa un excel cu carti in baza de date</string>
+   </property>
+  </action>
+  <action name="action_import_students">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../Downloads/student.png</normaloff>../../../../../../../../Downloads/student.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import elevi...</string>
+   </property>
+   <property name="toolTip">
+    <string>Import elevi</string>
+   </property>
+   <property name="statusTip">
+    <string>De aici poti importa un excel cu elevi in baza de date</string>
+   </property>
+  </action>
+  <action name="action_select_database">
+   <property name="text">
+    <string>Select database...</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
